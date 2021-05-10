@@ -1,0 +1,111 @@
+.header{
+    color: white;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.header::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.header > * {
+    margin: auto 12px;
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header > img{
+    object-fit: contain;
+    height: 80px;
+}
+
+.header__icon > .MuiSvgIcon-root{
+    margin-bottom: 7px;
+    font-size: 31px !important;
+}
+
+.header__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.header__icon > p{
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -4px;
+    font-size: 14px;
+}
+
+.active > p {
+    display: block !important;
+}
+
+.header__icon:hover > p, .header__user:hover > p{
+    display: inline;
+}
+
+.header__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 31px !important;
+    height: 31px !important;
+    margin-bottom: 7px;
+}
+
+.header__icon > button{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color : white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.header__icon > button:hover{
+    color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width : 768px){
+    .header > * {
+        margin: auto 7px;
+    }
+    .header__icon > p{
+        display: inline-flex;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

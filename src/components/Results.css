@@ -1,0 +1,22 @@
+.results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.results > a{
+    text-decoration: none;
+}
+
+
+.loader{
+    position: absolute;
+    top : 50vh;
+    left: 50vw;
+}
+
+
+
